@@ -1,0 +1,245 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color:#a1d3ff;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #6d90db;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.sidebar p, .sidebar ul, .sidebar a {
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #ecf0f1;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #a1d3ff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 40px;
+    flex-grow: 1;
+}
+
+header {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+header h2 {
+    margin: 5px 0;
+    font-size: 1.5em;
+    color: #c6ceff;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+section p, section ul, section li {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+section ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-color: #faf3e0; 
+        color: #ffffff; 
+    }
+
+    .container {
+        background-color: #faf3e0;
+    }
+
+    .sidebar {
+        background-color: #77bbfb; 
+    }
+
+    section ul li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #ffffff;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: #ffffff;
+    }
+    
+    header h2 {
+        margin: 5px 0;
+        font-size: 1.5em;
+        color: #8d897f;
+    }
+    section h3 {
+        font-size: 1.8em;
+        color: #50432c;
+        margin-bottom: 10px;
+    }
+    .sidebar a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        background-color: #00e1ff; 
+        color: #b5adff; 
+    }
+
+    .container {
+        background-color: #00629f; 
+    }
+
+    .sidebar {
+        background-color: #002aff; 
+    }
+
+    section ul li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #001d74;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: #a4deec;
+    }
+    
+    header h2 {
+        margin: 5px 0;
+        font-size: 1.5em;
+        color: #7f8b8d;
+    }
+    section h3 {
+        font-size: 1.8em;
+        color: #2c4950;
+        margin-bottom: 10px;
+    }
+    .sidebar a {
+        color: #94f8ff;
+        text-decoration: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+    body {
+        background-color: #ffebee; 
+        color: #000000; 
+    }
+
+    .container {
+        background-color: #ffffff; 
+    }
+
+    .sidebar {
+        background-color: #ffcaca; 
+    }
+    section ul li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #000000;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: #000000;
+    }
+    
+    header h2 {
+        margin: 5px 0;
+        font-size: 1.5em;
+        color: #000000;
+    }
+    section h3 {
+        font-size: 1.8em;
+        color: #fbb2b2;
+        margin-bottom: 10px;
+    }
+    .sidebar a {
+        color: #ff9595;
+        text-decoration: none;
+    }
+    
+}
